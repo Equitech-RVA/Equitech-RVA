@@ -53,6 +53,7 @@ section{ scroll-margin-top:80px; padding:56px 16px; }
   padding-top:32px; padding-bottom:48px;
   border-bottom:1px solid #e9eef6;
 }
+/* Always single-column since images are hidden site-wide */
 .hero__grid{ display:grid; gap:24px; grid-template-columns:1fr; }
 .hero h1{ margin:0 0 8px; font-size:clamp(1.8rem,4.5vw,2.6rem); }
 .hero p{ margin:0 0 16px; color:#495a6a; }
@@ -63,13 +64,7 @@ section{ scroll-margin-top:80px; padding:56px 16px; }
 .btn--ghost{ background:transparent; border:1.5px solid var(--brand); color:var(--brand); }
 .btn--ghost:hover{ background:#f3f8ff; }
 
-.hero__img{
-  width:100%; max-height:360px; object-fit:cover; border-radius:12px; border:1px solid #e7edf5;
-  box-shadow:0 8px 24px rgba(0,0,0,.05);
-}
-
 @media (min-width: 860px){
-  .hero__grid{ grid-template-columns:1.1fr .9fr; align-items:center; }
   .brand__logo{ width:48px; height:48px; }
 }
 
@@ -88,11 +83,9 @@ section{ scroll-margin-top:80px; padding:56px 16px; }
 }
 .card h3{ margin:.2rem 0 .4rem; }
 
-/* Program cards with images */
-.card--program{ padding:0; overflow:hidden; }
-.card__img{ width:100%; height:170px; object-fit:cover; display:block; }
-.card--program h3, .card--program p{ padding:12px 14px; }
-.card--program h3{ padding-bottom:4px; }
+/* Program cards: remove image space since images are hidden */
+.card--program{ padding:16px; overflow:hidden; }
+.card__img{ display:none !important; } /* safety */
 
 /* Quotes / stats */
 .quote{ margin:0; font-size:1.05rem; }
@@ -120,6 +113,29 @@ input, textarea{
 }
 textarea{ min-height:110px; resize:vertical; }
 
+/* Contact & Updates: blue background */
+#contact{
+  background:#0d47a1; /* deep blue */
+  color:#fff;
+}
+#contact h2,
+#contact p,
+#contact a{ color:#fff; }
+#contact .card{
+  background:rgba(255,255,255,0.08);
+  border-color:rgba(255,255,255,0.18);
+  backdrop-filter:saturate(120%) blur(2px);
+}
+#contact .btn.btn--primary{
+  background:#fff;
+  color:#0d47a1;
+  border:none;
+}
+#contact .btn.btn--primary:hover{
+  background:#e9eef6;
+  color:#0d47a1;
+}
+
 /* Footer */
 footer{ border-top:1px solid #e6ebf3; padding:24px 16px; background:#fafcff; }
 .footer-inner{
@@ -128,6 +144,11 @@ footer{ border-top:1px solid #e6ebf3; padding:24px 16px; background:#fafcff; }
 }
 .footer-brand{ display:flex; align-items:center; gap:10px; }
 .footer-note{ color:#5a6a7a; font-size:.95rem; }
+
+/* Hide ALL images except the logos (header + footer) */
+img{ display:none !important; }
+.brand__logo,
+.footer-brand img{ display:inline-block !important; }
 
 /* Mobile nav */
 @media (max-width: 880px){
@@ -143,3 +164,4 @@ footer{ border-top:1px solid #e6ebf3; padding:24px 16px; background:#fafcff; }
 
 /* Accessibility focus */
 a, button, input, textarea{ outline-color:var(--accent); outline-offset:2px; }
+
