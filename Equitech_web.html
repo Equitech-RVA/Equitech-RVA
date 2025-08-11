@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EquiTech RVA</title>
+
+  <!-- Preload key images (adjust paths if needed) -->
+  <link rel="preload" as="image" href="assets/equitech_logo.jpg" />
+  <link rel="preload" as="image" href="assets/hero.jpg" />
+
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header class="topbar" id="home">
+    <div class="topbar__inner">
+      <a class="brand" href="#home" aria-label="EquiTech RVA home">
+        <img class="brand__logo" src="assets/equitech_logo.jpg" alt="EquiTech RVA logo" width="48" height="48" />
+        <span class="brand__name">EquiTech RVA</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a class="nav__link" href="#home">Home</a>
+        <a class="nav__link" href="#mission">Mission</a>
+        <a class="nav__link" href="#programs">Programs</a>
+        <a class="nav__link" href="#stories">Stories</a>
+        <a class="nav__link" href="#events">Events</a>
+        <a class="nav__link" href="#contact">Contact</a>
+        <a class="nav__link nav__link--outline" href="#involved">Get Involved</a>
+        <a class="nav__link nav__link--primary" href="#donate">Donate</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div>
+        <h1>Empowering Youth Through <em>Technology</em> & <em>Equity</em></h1>
+        <p>Hands-on tech education, mentorship, and access to tools so every child can learn, build, and thrive—regardless of zip code.</p>
+        <div class="buttons">
+          <a href="#mission" class="btn btn--primary">Learn More</a>
+          <a href="#involved" class="btn btn--ghost">Get Involved</a>
+        </div>
+      </div>
+
+      <!-- Replace with a real, warm photo of students/mentors -->
+      <img class="hero__img" src="assets/hero.jpg" alt="Students collaborating on a coding project" />
+    </div>
+  </section>
+
+  <!-- Mission & Vision -->
+  <section id="mission">
+    <div class="container">
+      <h2>Our Mission & Vision</h2>
+      <div class="grid grid--2">
+        <div class="card">
+          <h3>Mission</h3>
+          <p>Close the digital divide by delivering inclusive, practical technology education and resources to underserved youth.</p>
+        </div>
+        <div class="card">
+          <h3>Vision</h3>
+          <p>A future where innovation and opportunity are equally accessible—and every child can shape tomorrow’s tech.</p>
+        </div>
+      </div>
+
+      <div class="spacer"></div>
+
+      <div class="grid grid--2">
+        <div class="card">
+          <h3>The Problem</h3>
+          <p>Too many students lack devices, internet, and exposure to tech pathways—limiting confidence and opportunity.</p>
+        </div>
+        <div class="card">
+          <h3>Our Approach</h3>
+          <p>After-school workshops, mentorship with tech pros, community tech labs, and partnerships with schools and local orgs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programs -->
+  <section id="programs">
+    <div class="container">
+      <h2>Programs</h2>
+      <div class="grid grid--3">
+        <article class="card card--program">
+          <img src="assets/program_workshops.jpg" alt="Students at a coding workshop" class="card__img" />
+          <h3>Coding Workshops</h3>
+          <p>Beginner-friendly classes in web, Python, and creative coding to spark curiosity and build real projects.</p>
+        </article>
+        <article class="card card--program">
+          <img src="assets/program_mentorship.jpg" alt="Mentor guiding a student" class="card__img" />
+          <h3>Mentorship</h3>
+          <p>One-on-one and small group mentoring from local engineers, designers, and data professionals.</p>
+        </article>
+        <article class="card card--program">
+          <img src="assets/program_lab.jpg" alt="Community tech lab with laptops" class="card__img" />
+          <h3>Community Tech Labs</h3>
+          <p>Safe, equipped spaces with devices, internet, and guidance—open hours for learning and exploration.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact Stories -->
+  <section id="stories">
+    <div class="container">
+      <h2>Impact Stories</h2>
+      <div class="grid grid--2">
+        <div class="card">
+          <blockquote class="quote">“I built my first app at EquiTech—now I want to be a software engineer!”</blockquote>
+          <p class="quote__by">— Devna, 10th grade</p>
+        </div>
+        <div class="card">
+          <blockquote class="quote">“Our students finally see themselves in tech. Confidence is up across the board.”</blockquote>
+          <p class="quote__by">— Mr. Nayak, Teacher</p>
+        </div>
+      </div>
+
+      <div class="spacer"></div>
+
+      <div class="stats">
+        <div class="stat"><strong>250+</strong> Students Reached</div>
+        <div class="stat"><strong>30+</strong> Active Mentors</div>
+        <div class="stat"><strong>12</strong> School Partners</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events -->
+<!-- Events -->
+<section id="events">
+  <div class="container">
+    <h2>Events</h2>
+    <div class="grid">
+      <article class="event">
+        <div class="event__info">
+          <h4>Youth Hackathon</h4>
+          <time datetime="2025-09-20">aug 8, 2025</time>
+        </div>
+        <a class="btn btn--ghost" 
+           href="https://docs.google.com/forms/d/1e2Ck1Bpc6u1zkrgisYiW2IuirVPca95FsHqZBbOqH38/viewform" 
+           target="_blank" rel="noopener">
+          Register
+        </a>
+      </article>
+      <article class="event">
+        <div class="event__info">
+          <h4>Intro to Web Dev</h4>
+          <time datetime="2025-10-05">Oct 5, 2025</time>
+        </div>
+        <a class="btn btn--ghost" 
+           href="https://docs.google.com/forms/d/1e2Ck1Bpc6u1zkrgisYiW2IuirVPca95FsHqZBbOqH38/viewform" 
+           target="_blank" rel="noopener">
+          Register
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+  <!-- Get Involved -->
+  <section id="involved">
+    <div class="container">
+      <h2>Ways to Get Involved</h2>
+      <div class="grid grid--3">
+        <div class="card">
+          <h3>Volunteer</h3>
+          <p>Teach, mentor, help with events, or support labs—we’ll match your skills to student needs.</p>
+        </div>
+        <div class="card">
+          <h3>Partner</h3>
+          <p>Schools, community orgs, and companies: let’s build opportunities together.</p>
+        </div>
+        <div class="card" id="donate">
+          <h3>Donate</h3>
+          <p>Equipment, funds, or space—everything helps expand access and impact.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Newsletter -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact & Newsletter</h2>
+      <div class="grid grid--2">
+        <div class="card">
+          <h3>Contact Us</h3>
+          <form>
+            <input type="text" name="name" placeholder="Your name" required />
+            <input type="email" name="email" placeholder="Your email" required />
+            <textarea name="message" placeholder="How can we help?" required></textarea>
+            <button class="btn btn--primary" type="submit">Send</button>
+          </form>
+        </div>
+        <div class="card">
+          <h3>Join Our Newsletter</h3>
+          <form>
+            <input type="email" name="newsletter" placeholder="Email address" required />
+            <button class="btn btn--ghost" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="assets/equitech_logo.jpg" alt="" width="28" height="28" />
+        <strong>EquiTech RVA</strong>
+      </div>
+      <div class="footer-note">Empowering Youth Through Technology & Equity</div>
+    </div>
+  </footer>
+
+  <script src="web.js"></script>
+</body>
+</html>
