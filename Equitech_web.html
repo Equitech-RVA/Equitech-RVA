@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>EquiTech RVA</title>
 
-  <!-- Preload key images (adjust paths if needed) -->
+  <!-- Make sure this file exists at ./assets/equitech_logo.jpg -->
   <link rel="preload" as="image" href="assets/equitech_logo.jpg" />
   <link rel="preload" as="image" href="assets/hero.jpg" />
 
@@ -17,7 +17,13 @@
   <header class="topbar" id="home">
     <div class="topbar__inner">
       <a class="brand" href="#home" aria-label="EquiTech RVA home">
-        <img class="brand__logo" src="assets/equitech_logo.jpg" alt="EquiTech RVA logo" width="48" height="48" />
+        <img
+          class="brand__logo"
+          src="assets/equitech_logo.jpg"
+          alt="EquiTech RVA logo"
+          width="48"
+          height="48"
+        />
         <span class="brand__name">EquiTech RVA</span>
       </a>
 
@@ -125,44 +131,44 @@
       <div class="spacer"></div>
 
       <div class="stats">
-        <div class="stat"><strong>250+</strong> Students Reached</div>
-        <div class="stat"><strong>30+</strong> Active Mentors</div>
-        <div class="stat"><strong>12</strong> School Partners</div>
+        <div class="stat"><strong>6+</strong> Students Reached</div>
+        <div class="stat"><strong>6+</strong> Active Mentors</div>
+        <div class="stat"><strong>1</strong> School Partners</div>
       </div>
     </div>
   </section>
 
   <!-- Events -->
-<!-- Events -->
-<section id="events">
-  <div class="container">
-    <h2>Events</h2>
-    <div class="grid">
-      <article class="event">
-        <div class="event__info">
-          <h4>Youth Hackathon</h4>
-          <time datetime="2025-09-20">aug 8, 2025</time>
-        </div>
-        <a class="btn btn--ghost" 
-           href="https://docs.google.com/forms/d/1e2Ck1Bpc6u1zkrgisYiW2IuirVPca95FsHqZBbOqH38/viewform" 
-           target="_blank" rel="noopener">
-          Register
-        </a>
-      </article>
-      <article class="event">
-        <div class="event__info">
-          <h4>Intro to Web Dev</h4>
-          <time datetime="2025-10-05">Oct 5, 2025</time>
-        </div>
-        <a class="btn btn--ghost" 
-           href="https://docs.google.com/forms/d/1e2Ck1Bpc6u1zkrgisYiW2IuirVPca95FsHqZBbOqH38/viewform" 
-           target="_blank" rel="noopener">
-          Register
-        </a>
-      </article>
+  <section id="events">
+    <div class="container">
+      <h2>Events</h2>
+      <div class="grid">
+        <article class="event">
+          <div class="event__info">
+            <h4>Youth Hackathon</h4>
+            <time datetime="2025-09-20">Aug 8, 2025</time>
+          </div>
+          <a class="btn btn--ghost" 
+             href="https://docs.google.com/forms/d/1e2Ck1Bpc6u1zkrgisYiW2IuirVPca95FsHqZBbOqH38/viewform" 
+             target="_blank" rel="noopener">
+            Register
+          </a>
+        </article>
+        <article class="event">
+          <div class="event__info">
+            <h4>Intro to Web Dev</h4>
+            <time datetime="2025-10-05">Oct 5, 2025</time>
+          </div>
+          <a class="btn btn--ghost" 
+             href="https://docs.google.com/forms/d/1e2Ck1Bpc6u1zkrgisYiW2IuirVPca95FsHqZBbOqH38/viewform" 
+             target="_blank" rel="noopener">
+            Register
+          </a>
+        </article>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
   <!-- Get Involved -->
   <section id="involved">
     <div class="container">
@@ -184,27 +190,20 @@
     </div>
   </section>
 
-  <!-- Contact & Newsletter -->
-  <section id="contact">
+  <!-- Contact -->
+  <section id="contact" class="section--brand-blue">
     <div class="container">
-      <h2>Contact & Newsletter</h2>
-      <div class="grid grid--2">
-        <div class="card">
-          <h3>Contact Us</h3>
-          <form>
-            <input type="text" name="name" placeholder="Your name" required />
-            <input type="email" name="email" placeholder="Your email" required />
-            <textarea name="message" placeholder="How can we help?" required></textarea>
-            <button class="btn btn--primary" type="submit">Send</button>
-          </form>
-        </div>
-        <div class="card">
-          <h3>Join Our Newsletter</h3>
-          <form>
-            <input type="email" name="newsletter" placeholder="Email address" required />
-            <button class="btn btn--ghost" type="submit">Subscribe</button>
-          </form>
-        </div>
+      <h2>Contact & Updates</h2>
+      <div class="card" style="text-align:center; padding:2rem;">
+        <p>Have a question or want to stay in the loop?</p>
+        <a
+          class="btn btn--primary"
+          href="https://docs.google.com/forms/d/1oTK0-_v1Tk6QKen_BuZNJSm7klEAAs-a3jj7jZFiDIA/edit"
+          target="_blank"
+          rel="noopener"
+          aria-label="Open our Google Form in a new tab"
+        >Open the Google Form</a>
+        <p class="small" style="margin-top:.75rem; opacity:.9;">Opens in a new tab.</p>
       </div>
     </div>
   </section>
@@ -213,7 +212,7 @@
   <footer>
     <div class="footer-inner">
       <div class="footer-brand">
-        <img src="assets/equitech_logo.jpg" alt="" width="28" height="28" />
+        <img src="assets/equitech_logo.jpg" alt="EquiTech RVA logo small" width="28" height="28" />
         <strong>EquiTech RVA</strong>
       </div>
       <div class="footer-note">Empowering Youth Through Technology & Equity</div>
@@ -223,3 +222,4 @@
   <script src="web.js"></script>
 </body>
 </html>
+
