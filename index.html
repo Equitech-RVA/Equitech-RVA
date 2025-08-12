@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>EquiTech RVA</title>
 
-  <!-- Make sure this file exists at ./assets/equitech_logo.jpg -->
-<link rel="preload" as="image" href="equitech_logo.jpg" />
+  <!-- Logo is at the repo root -->
+  <link rel="preload" as="image" href="equitech_logo.jpg" />
   <link rel="preload" as="image" href="assets/hero.jpg" />
 
   <link rel="stylesheet" href="index.css" />
@@ -17,10 +17,7 @@
   <header class="topbar" id="home">
     <div class="topbar__inner">
       <a class="brand" href="#home" aria-label="EquiTech RVA home">
-        <img
-<img class="brand__logo" src="equitech_logo.jpg" alt="EquiTech RVA logo" width="48" height="48" />
-
-
+        <img class="brand__logo" src="equitech_logo.jpg" alt="EquiTech RVA logo" width="48" height="48" />
         <span class="brand__name">EquiTech RVA</span>
       </a>
 
@@ -51,7 +48,6 @@
         </div>
       </div>
 
-      <!-- Replace with a real, warm photo of students/mentors -->
       <img class="hero__img" src="assets/hero.jpg" alt="Students collaborating on a coding project" />
     </div>
   </section>
@@ -143,7 +139,7 @@
         <article class="event">
           <div class="event__info">
             <h4>Youth Hackathon</h4>
-            <time datetime="TBA</time>
+            <time datetime="2025-09-20">Aug 8, 2025</time>
           </div>
           <a class="btn btn--ghost" 
              href="https://docs.google.com/forms/d/1e2Ck1Bpc6u1zkrgisYiW2IuirVPca95FsHqZBbOqH38/viewform" 
@@ -154,10 +150,10 @@
         <article class="event">
           <div class="event__info">
             <h4>Intro to Web Dev</h4>
-            <time datetime="TBA"></time>
+            <time datetime="2025-10-05">Oct 5, 2025</time>
           </div>
-          // <a class="btn btn--ghost" 
-            // href="https://docs.google.com/forms/d/1e2Ck1Bpc6u1zkrgisYiW2IuirVPca95FsHqZBbOqH38/viewform" 
+          <a class="btn btn--ghost" 
+             href="https://docs.google.com/forms/d/1e2Ck1Bpc6u1zkrgisYiW2IuirVPca95FsHqZBbOqH38/viewform" 
              target="_blank" rel="noopener">
             Register
           </a>
@@ -182,20 +178,22 @@
         <div class="card" id="donate">
           <h3>Donate</h3>
           <p>Equipment, funds, or space—everything helps expand access and impact.</p>
+          <p class="donation-note">Not currently set up for donations. Please contact us directly.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="section--brand-blue">
+  <!-- Section bg is white; inner card is blue -->
+  <section id="contact">
     <div class="container">
       <h2>Contact & Updates</h2>
-      <div class="card" style="text-align:center; padding:2rem;">
+      <div class="card card--blue" style="text-align:center; padding:2rem;">
         <p>Have a question or want to stay in the loop?</p>
         <a
-          class="btn btn--primary"
-          href="https://docs.google.com/forms/d/1oTK0-_v1Tk6QKen_BuZNJSm7klEAAs-a3jj7jZFiDIA/edit"
+          class="btn btn--black"
+          href="https://docs.google.com/forms/d/YOUR_FORM_ID/viewform"
           target="_blank"
           rel="noopener"
           aria-label="Open our Google Form in a new tab"
@@ -209,7 +207,7 @@
   <footer>
     <div class="footer-inner">
       <div class="footer-brand">
-<img src="equitech_logo.jpg" alt="EquiTech RVA logo small" width="28" height="28" />
+        <img src="equitech_logo.jpg" alt="EquiTech RVA logo small" width="28" height="28" />
         <strong>EquiTech RVA</strong>
       </div>
       <div class="footer-note">Empowering Youth Through Technology & Equity</div>
@@ -219,4 +217,3 @@
   <script src="web.js"></script>
 </body>
 </html>
-
